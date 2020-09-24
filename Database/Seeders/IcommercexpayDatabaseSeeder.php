@@ -35,7 +35,7 @@ class IcommercexpayDatabaseSeeder extends Seeder
                     'title' => trans($titleTrans),
                     'description' => trans($descriptionTrans),
                     'name' => config('asgard.icommercexpay.config.paymentName'),
-                    'active' => 1,
+                    'status' => 1,
                     'options' => $options
                 );
 
