@@ -1,5 +1,5 @@
 {
-    "name": "vendor/icommercexpay",
+    "name": "imagina/icommercexpay-module",
     "description": "",
     "type": "asgard-module",
     "license": "MIT",
@@ -7,7 +7,7 @@
         "php": ">=7.0.0",
         "composer/installers": "~1.0",
         "idavoll/core-module": "~3.0",
-        "vendor/icommerce": "dev-1.0.0"
+        "imagina/icommerce-module": "4.0.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0",
@@ -19,12 +19,12 @@
             "Modules\\": "Modules/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "authors": [
         {
-            "name": "William Verde",
-            "email": "wavutes@gmail.com"
+            "name": "Imagina Dev",
+            "email": "soporte@imaginacolombia.com"
         }
     ],
     "extra": {
@@ -35,6 +35,9 @@
             "aliases": {
                 
             }
+        },
+        "branch-alias": {
+            "dev-master": "4.0.x-dev"
         }
     },
     "autoload": {
