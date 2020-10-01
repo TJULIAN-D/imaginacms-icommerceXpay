@@ -1,5 +1,4 @@
-# AsgardCMS (Laravel) - Module
-## Payment Method - xPay
+# imaginacms-icommercexpay (PaymentMethod)
 
 #### Requirements
 
@@ -8,7 +7,7 @@
 
 #### Seeder
 
-```
+```bash
 php artisan module:seed Icommercexpay
 ```
 
