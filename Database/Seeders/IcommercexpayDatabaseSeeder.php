@@ -29,6 +29,7 @@ class IcommercexpayDatabaseSeeder extends Seeder
             $options['pass'] = null;
             $options['mode'] = "sandbox";
             $options['token'] = null;
+            $options['minimunAmount'] = 0;
 
             $titleTrans = 'icommercexpay::icommercexpays.single';
             $descriptionTrans = 'icommercexpay::icommercexpays.description';
@@ -62,7 +63,7 @@ class IcommercexpayDatabaseSeeder extends Seeder
         }else{
 
             $this->command->alert("This method has already been installed !!");
-            
+
         }
  
     }
