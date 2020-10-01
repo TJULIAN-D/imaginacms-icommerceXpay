@@ -6,7 +6,7 @@
     "require": {
         "php": ">=7.0.0",
         "composer/installers": "~1.0",
-        "idavoll/core-module": "~3.0",
+        "imagina/core-module": "4.0.x-dev",
         "imagina/icommerce-module": "4.0.x-dev"
     },
     "require-dev": {
@@ -39,6 +39,11 @@
         "branch-alias": {
             "dev-master": "4.0.x-dev"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php artisan module:seed Icommercexpay"
+        ]
     },
     "autoload": {
         "psr-4": {
