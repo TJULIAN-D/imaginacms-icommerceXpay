@@ -2,6 +2,7 @@
 
 namespace Modules\Icommercexpay\Providers;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
 use Modules\Core\Traits\CanPublishConfiguration;
 use Modules\Core\Events\BuildingSidebar;
@@ -29,7 +30,7 @@ class IcommercexpayServiceProvider extends ServiceProvider
         $this->app['events']->listen(BuildingSidebar::class, RegisterIcommercexpaySidebar::class);
 
         $this->app['events']->listen(LoadingBackendTranslations::class, function (LoadingBackendTranslations $event) {
-            $event->load('icommercexpays', array_dot(trans('icommercexpay::icommercexpays')));
+            $event->load('icommercexpays', Arr::dot(trans('icommercexpay::icommercexpays')));
             // append translations
 
         });

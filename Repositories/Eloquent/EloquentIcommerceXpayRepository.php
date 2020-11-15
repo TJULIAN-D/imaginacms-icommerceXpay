@@ -2,6 +2,7 @@
 
 namespace Modules\Icommercexpay\Repositories\Eloquent;
 
+use Illuminate\Support\Str;
 use Modules\Icommercexpay\Repositories\IcommerceXpayRepository;
 use Modules\Core\Repositories\Eloquent\EloquentBaseRepository;
 
@@ -56,7 +57,7 @@ class EloquentIcommerceXpayRepository extends EloquentBaseRepository implements 
         }
 
         // if a base64 was sent, store it in the db
-        if (starts_with($value, 'data:image'))
+        if (Str::startsWith($value, 'data:image'))
         {
             // 0. Make the image
             $image = \Image::make($value);
