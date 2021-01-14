@@ -16,6 +16,10 @@ return [
         'create icommercexpay' => 'Create a icommercexpay',
     ],
     'table' => [
+        'user' => 'Usuario',
+        'pass' => 'Contraseña',
+        'mode' => 'Modo',
+        'token' => 'Token'
     ],
     'form' => [
     ],
