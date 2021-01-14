@@ -57,7 +57,7 @@ return [
             'value' => 'Modules\Icommercexpay\Http\Controllers\Api\IcommerceXpayApiController',
             'name' => 'init',
             'isFakeField' => true
-        ]
+        ],
         'user' => [
         	'value' => null,
             'name' => 'user',
