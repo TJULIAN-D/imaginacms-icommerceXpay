@@ -40,6 +40,7 @@ class IcommercexpayServiceProvider extends ServiceProvider
     {
         $this->publishConfig('icommercexpay', 'permissions');
         $this->publishConfig('icommercexpay', 'config');
+        $this->publishConfig('icommercexpay', 'crud-fields');
 
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
