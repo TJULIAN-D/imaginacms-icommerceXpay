@@ -17,6 +17,8 @@ class IcommercexpayDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
+        $this->call(IcommercexpayModuleTableSeeder::class);
+        
         $name = config('asgard.icommercexpay.config.paymentName');
         $result = PaymentMethod::where('name',$name)->first();
 
