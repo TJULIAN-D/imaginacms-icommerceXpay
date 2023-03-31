@@ -80,6 +80,23 @@ return [
                 'label' => 'icommercexpay::icommercexpays.table.token'
             ]
         ],
+        'showInCurrencies' => [
+            'value' => ['COP'],
+            'name' => 'showInCurrencies',
+            'isFakeField' => true,
+            'type' => 'select',
+            'props' => [
+              'label' => 'icommerce::paymentmethods.messages.showInCurrencies',
+              'useInput' => false,
+              'useChips' => false,
+              'multiple' => true,
+              'hideDropdownIcon' => true,
+              'newValueMode' => 'add-unique',
+              'options' =>  [
+                ['label' => 'COP','value' => 'COP']
+              ]
+            ]
+        ],
         'mode' => [
             'value' => 'sandbox',
             'name' => 'mode',

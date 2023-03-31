@@ -32,6 +32,7 @@ class IcommercexpayDatabaseSeeder extends Seeder
             $options['mode'] = "sandbox";
             $options['token'] = null;
             $options['minimunAmount'] = 0;
+            $options['showInCurrencies'] = ["COP"];
 
             $titleTrans = 'icommercexpay::icommercexpays.single';
             $descriptionTrans = 'icommercexpay::icommercexpays.description';
